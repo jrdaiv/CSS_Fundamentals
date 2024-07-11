@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit A Recipe Form</title>
+    <style>
+
+    body{
+        background: linear-gradient(rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(cookie_background.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+        h1{
+            color:wheat;
+            text-align: center;
+            text-decoration: underline;
+            font-family: garamond;
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 60px;
+        }
+
+        form{
+            background-color: white;
+            background: rgba(0,0,0,0.3);
+            border: 3px solid;
+            border-radius: 5%;
+            border-color: white;
+            box-shadow: 0 0 25px;
+            max-width: 600px;
+            margin: auto;
+            padding: 100px;
+            
+
+        }
+
+        label{
+            display: block;
+            background-color: transparent;
+            border-radius: 3px;
+            font-weight: bold;
+            font-family: garamond;
+            font-size: 150%;
+            color: wheat
+        }
+        
+        button{
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: rgba(0,0,0,0.3);
+            box-shadow: 0 0 25px;
+            border: 2px solid;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer
+        }
+
+        .button{
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: rgba(0,0,0,0.3);
+            box-shadow: 0 0 25px;
+            border: 2px solid;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer
+        }
+
+
+</style>
+</head>
+<body>
+    <h1>Submit Your Recipe</h1>
+    <form action="submit_recipe.php" method="post">
+        <label for="recipe-name">Recipe Name:</label>
+        <input type="text" id="recipe-name" name="recipe-name" placeholder="Enter Recipe" required>
+        <br><br>
+        <label for="ingredients">Ingredients:</label>
+        <textarea id="ingredients" name="ingredients" rows="4" cols="50" placeholder="Enter Ingredients" required></textarea>
+        <br><br>
+        <label for="instructions">Instructions:</label>
+        <textarea id="instructions" name="instructions" rows="4" cols="50" placeholder="Enter Instructions" required></textarea>
+        <br><br>
+        <button type="submit">Submit Recipe</button>
+        <a href="css_fundamentals.html" class="button">Home</a>
+    </form>
+</body>
+</html>
